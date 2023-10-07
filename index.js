@@ -3,5 +3,25 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 
 let passOne = document.getElementById("pass-elOne")
 let passTwo = document.getElementById("pass-elTwo")
+let passLength = 12
+
+function getRandomPass()  {
+    let randomPass = Math.floor(Math.random() * characters.length)
+    return characters[randomPass]
+}
+
+function generatePass() {
+    let randomPassword = ""
+    for (let i = 0; i < passLength; i++){
+        randomPassword += getRandomPass()
+    }
+    return randomPassword
+}
 
 
+function pass()  {
+    const genPassOne = generatePass()
+    const genPassTwo = generatePass()
+    passOne.textContent = genPassOne
+    passTwo.textContent = genPassTwo
+}
