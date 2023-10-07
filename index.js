@@ -25,3 +25,68 @@ function pass()  {
     passOne.textContent = genPassOne
     passTwo.textContent = genPassTwo
 }
+
+
+
+
+
+
+
+
+
+let interval = null;
+
+document.getElementById('one-el').onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((character, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return characters[Math.floor(Math.random() * characters.length)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 5;
+  }, 15);
+}
+
+document.getElementById('two-el').onmouseover = event => {  
+    
+    let iteration = 0;
+    
+    
+    interval = setInterval(() => {
+      event.target.innerText = event.target.innerText
+        .split("")
+        .map((character, index) => {
+          if(index < iteration) {
+            return event.target.dataset.value[index];
+          }
+        
+          return characters[Math.floor(Math.random() * characters.length)]
+        })
+        .join("");
+      
+      if(iteration >= event.target.dataset.value.length){ 
+        clearInterval(interval);
+      }
+      
+      iteration += 1 / 5;
+
+      
+    }, 20);
+    
+  }
+  
+  
