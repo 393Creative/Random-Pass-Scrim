@@ -36,7 +36,7 @@ function pass()  {
 
 let interval = null;
 
-document.getElementById('one-el').onmouseover = event => {  
+document.getElementById('one-el').onmousemove = event => {  
   let iteration = 0;
   
   clearInterval(interval);
@@ -57,11 +57,11 @@ document.getElementById('one-el').onmouseover = event => {
       clearInterval(interval);
     }
     
-    iteration += 1 / 5;
+    iteration += 1 / 18;
   }, 15);
 }
 
-document.getElementById('two-el').onmouseover = event => {  
+document.getElementById('two-el').onmousemove = event => {  
     
     let iteration = 0;
     
@@ -82,10 +82,10 @@ document.getElementById('two-el').onmouseover = event => {
         clearInterval(interval);
       }
       
-      iteration += 1 / 5;
+      iteration += 1 / 18;
 
       
-    }, 20);
+    }, 15);
     
   }
   
