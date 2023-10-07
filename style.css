@@ -1,0 +1,58 @@
+body{
+    background-color: #1F2937;
+    color: #ffffff;
+    font-family: Karla, sans-serif;
+    margin: 55px ;
+}
+
+#passes{
+    display: flex;
+    padding-top: 25px;
+    text-align: center;
+    align-items: center;
+    border-top: solid 1px #2F3E53;
+    font-size: 16px;
+}
+
+#one-el{
+    margin: 0px 0px;
+    font-size: 40px;
+}
+
+#two-el{
+    color: #55F991;
+    margin: 0px 0px;
+    font-size: 40px;
+}
+
+#pass-elOne, #pass-elTwo{
+    background-color: #273549;
+    width: 211px;
+    padding: 10px 0px;
+    border-radius: 6px;
+    margin-right: 24px;
+    text-align: center;
+    align-items: center;
+    color: #55F991;
+}
+
+#btn {
+    width: 200px;
+    padding: 15px;
+    border-radius: 7px;
+    background: #10B981;
+    border: solid 0px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Karla, sans-serif;
+    font-weight: 400;
+}
+
+#help-el{
+    color: #d5d4d88f;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
