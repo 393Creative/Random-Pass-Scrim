@@ -5,13 +5,3 @@ let passOne = document.getElementById("pass-elOne")
 let passTwo = document.getElementById("pass-elTwo")
 
 
-function pass(characters) {
-    for (let i = 0; i < 15; i++) {
-      let randomCharacter = Math.floor(Math.random() * characters.length);
-      passOne.textContent += characters[randomCharacter];
-    }
-    for (let i = 0; i < 10; i++) {
-        let randomCharacter = Math.floor(Math.random() * characters.length);
-        passTwo.textContent += characters[randomCharacter];
-  }
-}
